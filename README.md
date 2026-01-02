@@ -151,26 +151,6 @@ What happens:
 
 ---
 
-## Project structure
-
-faiz-ai/
-├── config/
-│   └── config.yaml          # Configuration settings
-├── src/
-│   ├── agents/              # Headless browsing agents
-│   ├── core/
-│   │   └── semantic_brain.py # Vector embedding logic
-│   ├── protocols/           # Protocol handlers (HTTP, FTP, IPFS, Torrent)
-│   ├── safety/              # Safety verifiers (VirusTotal, hash checks)
-│   ├── search/              # Main retriever and ranker logic
-│   └── utils/               # Helpers (logger, spell check)
-├── main.py                  # CLI entry point
-├── setup.sh                 # Automated install & setup
-├── requirements.txt         # Python dependencies (recommended)
-└── README.md
-
----
-
 ## Safety & legal
 
 FAIZ-AI is provided as an educational/personal project. Use responsibly and in accordance with applicable laws.
@@ -196,12 +176,6 @@ Please keep changes focused and well-documented. If you want help drafting issue
 ## License
 
 This repository is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
-
-Summary: The MIT License is a permissive open-source license allowing reuse, modification, and distribution with attribution. If you want a short SPDX badge or a link to the canonical license text, I can add that as well:
-- SPDX: `MIT`
-- Canonical text: https://opensource.org/licenses/MIT
-
----
 
 ## Contact
 
