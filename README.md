@@ -86,8 +86,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-Install Python dependencies:
-If you get an error (config.yaml) that no such file or dictionary exists, make sure to add the correct path of the config.yaml file in setup.sh line 52, like /workspaces/FAIZ-AI/config/config.yaml. 
+Install Python dependencies: 
 
 ```bash
 sudo bash setup.sh

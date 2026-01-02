@@ -44,26 +44,25 @@ pip install \
 # 5. Install Node.js & npm (for headless browser agents)
 echo "Installing Node.js..."
 sudo apt-get install -y nodejs
-sudo apt-get install -y nsolid -y
 
-# 6. Create essential config file
-echo "Creating default configuration..."
-cat > config/config.yaml << EOF
-cat > /workspaces/FAIZ-AI/config/config.yaml << 'EOF'
-# FAIZ AI Configuration
-core:
-  model: "all-MiniLM-L6-v2"
-  embedding_dim: 384
+# # 6. Create essential config file
+# echo "Creating default configuration..."
+# cat > config/config.yaml << EOF
+# cat > /workspaces/FAIZ-AI/config/config.yaml << 'EOF'
+# # FAIZ AI Configuration
+# core:
+#   model: "all-MiniLM-L6-v2"
+#   embedding_dim: 384
 
-search:
-  timeout: 30
-  max_results: 50
-  protocols: ["http", "ftp", "ipfs", "torrent"]
+# search:
+#   timeout: 30
+#   max_results: 50
+#   protocols: ["http", "ftp", "ipfs", "torrent"]
 
-safety:
-  enable_verification: false  # Phase 1
-  max_file_size_mb: 100
-EOF
+# safety:
+#   enable_verification: false  # Phase 1
+#   max_file_size_mb: 100
+# EOF
 
 echo "Setup complete."
 echo "To activate the environment, run: source venv/bin/activate"
